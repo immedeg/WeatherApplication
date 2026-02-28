@@ -1,9 +1,9 @@
 package com.example.weatherapplication;
 
 public class CityItem {
-    private String name;
-    private String slug;
-    private int id;
+    private final String name;
+    private final String slug;
+    private final int id;
 
     public CityItem(String name, String slug, int id) {
         this.name = name;
