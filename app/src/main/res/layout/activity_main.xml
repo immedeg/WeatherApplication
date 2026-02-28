@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_blue"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city_label"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_gray"
+                android:layout_marginBottom="12dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerCity"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/light_gray"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="1dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroupPeriod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+
+                <RadioButton
+                    android:id="@+id/radioToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/period_today"
+                    android:textSize="16sp"
+                    android:checked="true"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="3dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioTomorrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/period_tomorrow"
+                    android:textSize="16sp"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="3dp"/>
+
+                <RadioButton
+                    android:id="@+id/radio3days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/period_3days"
+                    android:textSize="16sp"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="3dp"/>
+
+                <RadioButton
+                    android:id="@+id/radio10days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/period_10days"
+                    android:textSize="16sp"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLaunch"
+            android:layout_width="180dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/button"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_background"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>

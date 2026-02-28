@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WeatherApplication</string>
+    <string name="title">Погода</string>
+    <string name="city_label">Город</string>
+    <string name="period_today">Сегодня</string>
+    <string name="period_tomorrow">Завтра</string>
+    <string name="period_3days">3 дня</string>
+    <string name="period_10days">10 дней</string>
+    <string name="button">Запустить</string>
+</resources>
